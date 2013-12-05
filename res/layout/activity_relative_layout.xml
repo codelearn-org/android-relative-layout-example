@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/ic_launcher"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pic"
+        android:layout_toRightOf="@+id/pic"
+        android:text="Night Storm"
+        android:textColor="#040404"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/pic"
+        android:layout_marginRight="3dip"
+        android:text="26 NOV 2013"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginRight="3dip"
+        android:layout_toRightOf="@+id/pic"
+        android:gravity="left"
+        android:text="This is a stormy night. It is good time to stay back at home :)"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText" />
+
+ 
+</RelativeLayout>
